@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эстафета памяти</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="/images/markers/custom-marker.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Эстафета памяти</h1>
+    </header>
+    
+    <div class="controls">
+        <div class="controls-group">
+            <button id="add-point" class="btn"><i class="fas fa-plus"></i> Добавить точку</button>
+            <button id="clear-points" class="btn btn-warning"><i class="fas fa-trash"></i> Очистить все</button>
+        </div>
+        <div id="point-counter" class="counter">Точек на карте: 0</div>
+    </div>
+    
+    <div class="main-container">
+        <div id="map-container"></div>
+        
+        <!-- Панель информации о точке -->
+        <div id="info-panel" class="info-panel hidden">
+            <div class="panel-content">
+                <button id="close-panel" class="btn btn-close"><i class="fas fa-times"></i></button>
+                
+                <div class="photo-gallery">
+                    <div class="photo-container">
+                        <img id="current-photo" src="" alt="Фото точки">
+                    </div>
+                    <button id="prev-photo" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button id="next-photo" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+                    <div class="photo-counter"></div>
+                </div>
+                
+                <div class="point-info">
+                    <h2 id="point-title"></h2>
+                    <div class="coordinates" id="point-coords"></div>
+                    <p id="point-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        © 2025 Эстафета памяти | ГБПОУ "Колледж Царицыно"
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=20481c3c-6ae8-4eb7-992d-29c003229068&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js" type="module"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
