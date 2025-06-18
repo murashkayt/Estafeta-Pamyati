@@ -28,21 +28,21 @@ header {
 }
 
 .org-logo img {
-    height: 85px;
+    height: 65px;
     width: auto;
     margin-right: 20px;
 }
 
 .org-info h2 {
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 14px;
     color: #333;
     width: 58%;
 }
 
 .org-info p {
     margin: 5px 0 0;
-    font-size: 14px;
+    font-size: 10px;
     color: #666;
 }
 
@@ -63,6 +63,7 @@ header {
     overflow: hidden;
     display: flex;
     align-items: center;
+    background-color: #1a3d9a;
 }
 
 .marquee-content {
@@ -87,7 +88,7 @@ header {
     width: 130px;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    box-shadow: inset 0px -2px 40px 40px rgb(26 61 154);
 }
 
 .marquee-separator {
@@ -105,12 +106,11 @@ header {
     transform: translate(-50%, -50%);
     z-index: 10;
     background: white;
-    padding: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
 }
 
 .site-logo img {
-    height: 80px;
+    height: 100px;
     width: auto;
     display: block;
 }

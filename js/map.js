@@ -25,7 +25,7 @@ export class MapManager {
             ymaps.ready(() => {
                 try {
                     this.map = new ymaps.Map(this.mapId, {
-                        center: [55.7558, 37.6176], // Центр Москвы
+                        center: [55.754020, 37.620366], // Центр Москвы
                         zoom: 10,
                         // Устанавливаем ограничения
                         restrictMapArea: MOSCOW_REGION_BOUNDS
@@ -42,7 +42,7 @@ export class MapManager {
                     this.map.setBounds(MOSCOW_REGION_BOUNDS, {
                         checkZoomRange: true
                     }).then(() => {
-                        this.map.options.set('minZoom', 8);
+                        this.map.options.set('minZoom', 7);
                         this.map.options.set('maxZoom', 14);
                     });
     
